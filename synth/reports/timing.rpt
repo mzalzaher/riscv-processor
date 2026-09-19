@@ -1,0 +1,112 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cpu
+Version: W-2024.09
+Date   : Fri May  9 22:57:51 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: enclosed
+
+  Startpoint: ex_stage/mult_ex/U1/mult_x_1/my_clk_r_REG236_S1
+              (rising edge-triggered flip-flop clocked by my_clk)
+  Endpoint: ex_stage/mult_ex/U1/mult_x_1/R_5_clk_r_REG83_S2
+            (rising edge-triggered flip-flop clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cpu                5K_hvratio_1_1        NangateOpenCellLibrary
+  ex_stage_i_DW_mult_pipe_J6_0
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clk (rise edge)                            0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  ex_stage/mult_ex/U1/mult_x_1/my_clk_r_REG236_S1/CK (DFF_X1)
+                                                      0.000000 # 0.000000 r
+  ex_stage/mult_ex/U1/mult_x_1/my_clk_r_REG236_S1/Q (DFF_X1)
+                                                      0.119930   0.119930 r
+  ex_stage/mult_ex/U1/U1576/ZN (OAI22_X1)             0.049325   0.169254 f
+  ex_stage/mult_ex/U1/U1578/ZN (NOR2_X1)              0.158199   0.327453 r
+  ex_stage/mult_ex/U1/U1579/Z (BUF_X1)                0.175116   0.502570 r
+  ex_stage/mult_ex/U1/U1733/ZN (AOI222_X1)            0.073675   0.576245 f
+  ex_stage/mult_ex/U1/U1734/Z (XOR2_X1)               0.088795   0.665040 f
+  ex_stage/mult_ex/U1/U1809/CO (HA_X1)                0.060794   0.725833 f
+  ex_stage/mult_ex/U1/U1808/CO (HA_X1)                0.050757   0.776590 f
+  ex_stage/mult_ex/U1/U1807/CO (FA_X1)                0.087887   0.864477 f
+  ex_stage/mult_ex/U1/U1806/CO (FA_X1)                0.090643   0.955121 f
+  ex_stage/mult_ex/U1/U1805/CO (FA_X1)                0.090643   1.045764 f
+  ex_stage/mult_ex/U1/U1804/CO (FA_X1)                0.090643   1.136407 f
+  ex_stage/mult_ex/U1/U1803/CO (FA_X1)                0.090643   1.227051 f
+  ex_stage/mult_ex/U1/U1802/CO (FA_X1)                0.090643   1.317694 f
+  ex_stage/mult_ex/U1/U1801/CO (FA_X1)                0.090643   1.408338 f
+  ex_stage/mult_ex/U1/U1800/CO (FA_X1)                0.090643   1.498981 f
+  ex_stage/mult_ex/U1/U1799/CO (FA_X1)                0.090643   1.589624 f
+  ex_stage/mult_ex/U1/U1798/CO (FA_X1)                0.090643   1.680268 f
+  ex_stage/mult_ex/U1/U1797/CO (FA_X1)                0.090643   1.770911 f
+  ex_stage/mult_ex/U1/U1796/CO (FA_X1)                0.090643   1.861555 f
+  ex_stage/mult_ex/U1/U1795/CO (FA_X1)                0.090643   1.952198 f
+  ex_stage/mult_ex/U1/U1794/CO (FA_X1)                0.098990   2.051188 f
+  ex_stage/mult_ex/U1/U1745/ZN (NAND2_X1)             0.034697   2.085885 r
+  ex_stage/mult_ex/U1/U1747/ZN (NAND3_X1)             0.037079   2.122964 f
+  ex_stage/mult_ex/U1/U1793/CO (FA_X1)                0.090193   2.213157 f
+  ex_stage/mult_ex/U1/U1792/CO (FA_X1)                0.090643   2.303800 f
+  ex_stage/mult_ex/U1/U1791/CO (FA_X1)                0.090643   2.394443 f
+  ex_stage/mult_ex/U1/U1790/CO (FA_X1)                0.090643   2.485086 f
+  ex_stage/mult_ex/U1/U1789/CO (FA_X1)                0.090643   2.575729 f
+  ex_stage/mult_ex/U1/U1788/CO (FA_X1)                0.090643   2.666373 f
+  ex_stage/mult_ex/U1/U1787/CO (FA_X1)                0.090643   2.757016 f
+  ex_stage/mult_ex/U1/U1786/CO (FA_X1)                0.090643   2.847659 f
+  ex_stage/mult_ex/U1/U1785/CO (FA_X1)                0.090643   2.938302 f
+  ex_stage/mult_ex/U1/U1784/CO (FA_X1)                0.090643   3.028945 f
+  ex_stage/mult_ex/U1/U1783/CO (FA_X1)                0.098990   3.127935 f
+  ex_stage/mult_ex/U1/U1754/ZN (NAND2_X1)             0.034697   3.162632 r
+  ex_stage/mult_ex/U1/U1756/ZN (NAND3_X1)             0.037079   3.199711 f
+  ex_stage/mult_ex/U1/U1782/CO (FA_X1)                0.090193   3.289904 f
+  ex_stage/mult_ex/U1/U1781/CO (FA_X1)                0.090643   3.380547 f
+  ex_stage/mult_ex/U1/U1780/CO (FA_X1)                0.090643   3.471190 f
+  ex_stage/mult_ex/U1/U1779/CO (FA_X1)                0.090643   3.561833 f
+  ex_stage/mult_ex/U1/U1778/CO (FA_X1)                0.090643   3.652476 f
+  ex_stage/mult_ex/U1/U1777/CO (FA_X1)                0.090643   3.743119 f
+  ex_stage/mult_ex/U1/U1776/CO (FA_X1)                0.090643   3.833763 f
+  ex_stage/mult_ex/U1/U1775/CO (FA_X1)                0.090643   3.924406 f
+  ex_stage/mult_ex/U1/U1774/CO (FA_X1)                0.090643   4.015049 f
+  ex_stage/mult_ex/U1/U1773/CO (FA_X1)                0.098990   4.114039 f
+  ex_stage/mult_ex/U1/U1760/ZN (NAND2_X1)             0.034698   4.148736 r
+  ex_stage/mult_ex/U1/U1762/ZN (NAND3_X1)             0.036497   4.185234 f
+  ex_stage/mult_ex/U1/U1772/CO (FA_X1)                0.098539   4.283772 f
+  ex_stage/mult_ex/U1/U1766/ZN (NAND2_X1)             0.034698   4.318470 r
+  ex_stage/mult_ex/U1/U1768/ZN (NAND3_X1)             0.036471   4.354941 f
+  ex_stage/mult_ex/U1/U1771/CO (FA_X1)                0.090193   4.445134 f
+  ex_stage/mult_ex/U1/U1770/CO (FA_X1)                0.090643   4.535778 f
+  ex_stage/mult_ex/U1/U1769/CO (FA_X1)                0.090643   4.626421 f
+  ex_stage/mult_ex/U1/U57/CO (FA_X1)                  0.090643   4.717064 f
+  ex_stage/mult_ex/U1/U56/CO (FA_X1)                  0.090643   4.807708 f
+  ex_stage/mult_ex/U1/U55/S (FA_X1)                   0.129553   4.937261 r
+  ex_stage/mult_ex/U1/mult_x_1/R_5_clk_r_REG83_S2/D (DFF_X1)
+                                                      0.009042   4.946302 r
+  data arrival time                                              4.946302
+
+  clock my_clk (rise edge)                            5.000000   5.000000
+  clock network delay (ideal)                         0.000000   5.000000
+  ex_stage/mult_ex/U1/mult_x_1/R_5_clk_r_REG83_S2/CK (DFF_X1)
+                                                      0.000000   5.000000 r
+  library setup time                                  -0.032001  4.967999
+  data required time                                             4.967999
+  --------------------------------------------------------------------------
+  data required time                                             4.967999
+  data arrival time                                              -4.946302
+  --------------------------------------------------------------------------
+  slack (MET)                                                    0.021697
+
+
+1
